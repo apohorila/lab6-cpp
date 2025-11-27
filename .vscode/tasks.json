@@ -1,0 +1,32 @@
+{
+    "tasks": [
+        {
+            "type": "cppbuild",
+            "label": "C/C++: G++ Build Lab 6",
+            "command": "C:\\msys64\\ucrt64\\bin\\g++.exe",
+            "args": [
+                "-fdiagnostics-color=always",
+                "-g",
+                "-std=c++20",
+                "-pthread",
+                "-mconsole",
+                "${fileDirname}\\main.cpp",
+                "${fileDirname}\\player.cpp",
+                "-o",
+                "${fileDirname}\\lab6_main.exe"
+            ],
+            "options": {
+                "cwd": "${fileDirname}"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "detail": "Task to build Lab 6 project with C++20 concurrency support."
+        }
+    ],
+    "version": "2.0.0"
+}
